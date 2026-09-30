@@ -1,0 +1,114 @@
+<!-- ========================================== -->
+<!-- SECTION 1: HEADER                          -->
+<!-- ========================================== -->
+<style>
+    .sec1-wrapper {
+        background-color: #121212;
+        color: #ffffff;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .sec1-header {
+        max-width: 1500px;
+        margin: 0 auto;
+        padding: 25px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+    .sec1-logo-container {
+        display: flex;
+        align-items: center;
+    }
+    .sec1-logo {
+        max-height: 90px;
+        width: auto;
+        display: block;
+        transition: opacity 0.25s ease;
+    }
+    .sec1-logo:hover {
+        opacity: 0.8;
+    }
+    .sec1-nav {
+        display: flex;
+        gap: 32px;
+        font-size: 15px;
+        font-weight: 500;
+        align-items: center;
+    }
+    .sec1-nav a {
+        color: #b0b0b0;
+        text-decoration: none;
+        transition: color 0.25s ease;
+        position: relative;
+    }
+    .sec1-nav a:hover {
+        color: #f7df1e;
+    }
+    .sec1-nav a::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: -5px;
+        left: 0;
+        background-color: #f7df1e;
+        transition: width 0.25s ease;
+        border-radius: 2px;
+    }
+    .sec1-nav a:hover::after {
+        width: 100%;
+    }
+    .sec1-schedule-btn {
+        background: transparent;
+        color: #ffffff;
+        border: 2px solid rgba(255, 255, 255, 0.2);
+        padding: 12px 22px;
+        font-size: 12px;
+        font-weight: 700;
+        border-radius: 30px;
+        cursor: pointer;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        transition: all 0.25s ease;
+    }
+    .sec1-schedule-btn:hover {
+        background-color: #f7df1e;
+        color: #121212;
+        border-color: #f7df1e;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(247, 223, 30, 0.25);
+    }
+    @media (max-width: 900px) {
+        .sec1-nav {
+            display: none;
+        }
+        .sec1-header {
+            padding: 20px;
+        }
+    }
+</style>
+
+<section>
+    <div class="sec1-wrapper">
+        <header class="sec1-header">
+            <div class="sec1-logo-container">
+                <a href="index.html">
+                    <img src="https://www.settlemax.info/wp-content/uploads/2022/04/SettleMax-Logo-White-300x180.png" alt="SettleMax Logo" class="sec1-logo">
+                </a>
+            </div>
+            <nav class="sec1-nav">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="directory.html">Directory</a>
+                <a href="shop.html">Shop</a>
+                <a href="about-us.html">About Us</a>
+                <a href="case-reviews.html">CASE Reviews</a>
+                <a href="training.html">Training</a>
+            </nav>
+            <button type="button" onclick="window.location.href='schedule-a-call.html'" class="sec1-schedule-btn">Schedule a Call</button>
+        </header>
+    </div>
+</section>
