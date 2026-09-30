@@ -1,0 +1,171 @@
+<!-- ========================================== -->
+<!-- SECTION 9: FOOTER                          -->
+<!-- ========================================== -->
+<style>
+    .sec9-wrapper {
+        background-color: #121212;
+        color: #ffffff;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 70px 20px 30px 20px;
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .sec9-container {
+        max-width: 1400px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1.2fr 0.9fr 1fr 1.6fr;
+        gap: 40px;
+        align-items: start;
+        padding-bottom: 50px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    }
+    .sec9-col-logo {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    .sec9-logo {
+        max-width: 200px;
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    .sec9-tagline {
+        font-size: 14px;
+        color: #9a9a9a;
+        line-height: 1.5;
+        margin: 0;
+    }
+    .sec9-col h4 {
+        font-size: 17px;
+        font-weight: 700;
+        color: #ffffff;
+        margin-top: 0;
+        margin-bottom: 22px;
+        letter-spacing: -0.2px;
+    }
+    .sec9-links {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+    .sec9-links a {
+        color: #b0b0b0;
+        text-decoration: none;
+        font-size: 14.5px;
+        transition: color 0.25s ease;
+    }
+    .sec9-links a:hover {
+        color: #f7df1e;
+    }
+    .sec9-contact-info {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+    }
+    .sec9-contact-info a, 
+    .sec9-contact-info p {
+        color: #b0b0b0;
+        text-decoration: none;
+        font-size: 14.5px;
+        margin: 0;
+        transition: color 0.25s ease;
+    }
+    .sec9-contact-info a:hover {
+        color: #f7df1e;
+    }
+    .sec9-map-box {
+        width: 100%;
+        height: 180px;
+        border-radius: 8px;
+        overflow: hidden;
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        background: #000;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+    }
+    .sec9-map-box iframe {
+        width: 100%;
+        height: 100%;
+        border: 0;
+        display: block;
+    }
+    .sec9-copyright {
+        text-align: center;
+        padding-top: 30px;
+        font-size: 13.5px;
+        color: #888888;
+        letter-spacing: 0.2px;
+    }
+    @media (max-width: 1100px) {
+        .sec9-container {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+        }
+    }
+    @media (max-width: 650px) {
+        .sec9-container {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+
+<section>
+    <div class="sec9-wrapper">
+        <div class="sec9-container">
+            
+            <!-- Column 1: Logo & Tagline -->
+            <div class="sec9-col-logo">
+                <a href="index.html">
+                    <img src="https://www.settlemax.info/wp-content/uploads/2022/04/SettleMax-Logo-White-300x180.png" alt="SettleMax Logo" class="sec9-logo">
+                </a>
+                <p class="sec9-tagline">We specialize in maximizing settlement valuation</p>
+            </div>
+
+            <!-- Column 2: Quick Links -->
+            <div class="sec9-col">
+                <h4>Quick Links</h4>
+                <ul class="sec9-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="case-reviews.html">CASE Reviews</a></li>
+                    <li><a href="training.html">Training</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3: Get In Touch -->
+            <div class="sec9-col">
+                <h4>Get In Touch</h4>
+                <div class="sec9-contact-info">
+                    <a href="mailto:support@settlemax.info">support@settlemax.info</a>
+                    <a href="tel:8337428348">833-PI-AUDIT (833-742-8348)</a>
+                </div>
+            </div>
+
+            <!-- Column 4: Interactive Map -->
+            <div class="sec9-col">
+                <h4>Location</h4>
+                <div class="sec9-map-box">
+                    <iframe 
+                        src="https://maps.google.com/maps?q=140%20Island%20Way,%20Clearwater,%20FL%2033767&t=&z=14&ie=UTF8&iwloc=&output=embed" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="sec9-copyright">
+            &copy;2026, Settle Max | All Rights Reserved
+        </div>
+    </div>
+</section>
